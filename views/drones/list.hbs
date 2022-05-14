@@ -1,1 +1,37 @@
 <h2>Available drones</h2>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Propellers</th>
+      <th scope="col">MaxSpeed</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  {{#each drones}}
+    <tr scope="row">
+      <td>{{this.name}}</td>
+      <td>{{this.propellers}}</td>
+      <td>{{this.maxSpeed}}</td>
+      <td><a class="btn btn-secondary" href="/drones/{{this._id}}/edit">Edit Drone</a></td>
+      <td>
+          <form action="/drones/{{this._id}}/delete" method="post">
+              <button type="submit" class="btn btn-danger">Delete Drone</button>
+          </form>
+      </td>
+    </tr>
+    {{/each}}
+    <tr>
+      <td>
+        <form action="/drones/create" method="get">
+          <button type="submit" class="btn btn-primary">Create Drone</button>
+        </form>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+</table>

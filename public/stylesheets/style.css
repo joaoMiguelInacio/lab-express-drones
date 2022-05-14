@@ -1,8 +1,23 @@
-body {
-  padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+*{
+  padding: 0;
+  text-align: center;
 }
 
-a {
-  color: #00b7ff;
+body {
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  margin: 50px;
+  background-color: rgba(245, 245, 245, 0.87);
+}
+
+.nav-link {
+  font-size: x-large;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+h1{
+  line-height: 300px;
 }
