@@ -6,6 +6,7 @@ const droneSchema = new Schema ({
     maxSpeed: Number
 });
 
-const Drone = model('Drones', droneSchema);
+/* Your model's name should be Drone, and not Drones. Models' naming convention recommends singular use */
+const Drone = model('Drone', droneSchema);
 
 module.exports = Drone;

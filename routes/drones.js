@@ -61,3 +61,5 @@ router.post('/:id/delete', async (req, res, next) => {
 });
 
 module.exports = router;
+
+/* Great job will writting all the routes. Very clean code, using the prefixes and using next() to run the errors. */
